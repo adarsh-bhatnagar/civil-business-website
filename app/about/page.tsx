@@ -1,0 +1,156 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import { Target, Award, Users, TrendingUp } from 'lucide-react'
+import Button from '@/components/ui/Button'
+
+const values = [
+  {
+    icon: Target,
+    title: 'Quality Work',
+    description: 'We follow best practices and high standards on every project we deliver.',
+  },
+  {
+    icon: Award,
+    title: 'Follow Standards',
+    description: 'We follow ISO-19650 and other international standards to ensure quality.',
+  },
+  {
+    icon: Users,
+    title: 'Work Together',
+    description: 'We partner with you and your team, not just work for you.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Stay Current',
+    description: 'We use the latest tools and methods to give you the best results.',
+  },
+]
+
+export default function AboutPage() {
+  return (
+    <div className="pt-32 pb-24 bg-bim-concrete min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-5xl md:text-6xl font-bold text-bim-charcoal mb-6">
+            About Us
+          </h1>
+          <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
+            We've been helping construction companies build smarter for over 15 years. 
+            We specialize in 3D building models and digital building management.
+          </p>
+        </motion.div>
+
+        {/* Mission */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-white rounded-lg p-8 md:p-12 shadow-sm mb-16"
+        >
+          <h2 className="text-3xl font-semibold text-bim-charcoal mb-6">
+            Our Mission
+          </h2>
+          <p className="text-lg text-bim-charcoal/70 leading-relaxed mb-6">
+            Our mission is simple: help construction companies build better projects. We use 3D digital models 
+            and smart building technology to help you finish on time, stay on budget, and avoid costly mistakes.
+          </p>
+          <p className="text-lg text-bim-charcoal/70 leading-relaxed">
+            We bring years of real-world experience to every project. We follow international standards, 
+            use proven methods, and deliver quality work that makes a difference.
+          </p>
+        </motion.div>
+
+        {/* Values */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-semibold text-bim-charcoal mb-8 text-center">
+            Our Values
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => {
+              const Icon = value.icon
+              return (
+                <motion.div
+                  key={value.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 text-center"
+                >
+                  <div className="w-16 h-16 bg-bim-teal/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Icon className="text-bim-teal" size={32} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-bim-charcoal mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-bim-charcoal/70 text-sm leading-relaxed">
+                    {value.description}
+                  </p>
+                </motion.div>
+              )
+            })}
+          </div>
+        </motion.div>
+
+        {/* Experience */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-bim-deep-blue text-white rounded-lg p-8 md:p-12 shadow-lg mb-16"
+        >
+          <h2 className="text-3xl font-semibold mb-8">
+            Experience & Expertise
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <div className="text-4xl font-bold text-bim-teal mb-2">500+</div>
+              <div className="text-white/80">Projects Delivered</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-bim-teal mb-2">15+</div>
+              <div className="text-white/80">Years Experience</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-bim-teal mb-2">ISO-19650</div>
+              <div className="text-white/80">Certified</div>
+            </div>
+          </div>
+          <p className="mt-8 text-white/80 leading-relaxed">
+            We've worked on all types of projects: office buildings, hospitals, factories, infrastructure, 
+            and more. We've helped contractors, developers, and building owners set up better information 
+            management systems and follow industry standards.
+          </p>
+        </motion.div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
+          <Button href="/contact" variant="primary" className="text-lg px-8 py-4">
+            Work With Us
+          </Button>
+        </motion.div>
+      </div>
+    </div>
+  )
+}
