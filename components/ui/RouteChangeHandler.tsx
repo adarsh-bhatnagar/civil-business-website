@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { useLoading } from '@/contexts/LoadingContext'
 
-export default function RouteChangeHandler() {
+function RouteChangeHandlerInner() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
   const { startLoading, stopLoading } = useLoading()
@@ -38,4 +38,12 @@ export default function RouteChangeHandler() {
   }, [startLoading])
 
   return null
+}
+
+export default function RouteChangeHandler() {
+  return (
+    <Suspense fallback={null}>
+      <RouteChangeHandlerInner />
+    </Suspense>
+  )
 }

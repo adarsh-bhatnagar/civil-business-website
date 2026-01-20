@@ -188,7 +188,7 @@ export default function DigitalTwinPage() {
           </div>
           <p className="text-bim-charcoal/70 mb-6 leading-relaxed">
             We use Autodesk Tandem to create digital twins that connect design, construction, and operations. 
-            Here's what we do:
+            Here is what we do:
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div>

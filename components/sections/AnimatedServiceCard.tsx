@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ReactNode, LucideIcon } from 'lucide-react'
+import { ReactNode } from 'react'
+import { LucideIcon } from 'lucide-react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 

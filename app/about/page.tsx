@@ -42,7 +42,7 @@ export default function AboutPage() {
             About Us
           </h1>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            We've been helping construction companies build smarter for over 15 years. 
+            We have been helping construction companies build smarter for over 15 years. 
             We specialize in 3D building models and digital building management.
           </p>
         </motion.div>
@@ -132,8 +132,8 @@ export default function AboutPage() {
             </div>
           </div>
           <p className="mt-8 text-white/80 leading-relaxed">
-            We've worked on all types of projects: office buildings, hospitals, factories, infrastructure, 
-            and more. We've helped contractors, developers, and building owners set up better information 
+            We have worked on all types of projects: office buildings, hospitals, factories, infrastructure, 
+            and more. We have helped contractors, developers, and building owners set up better information 
             management systems and follow industry standards.
           </p>
         </motion.div>

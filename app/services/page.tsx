@@ -124,7 +124,7 @@ export default function ServicesPage() {
           </h1>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
             Complete BIM and Digital Twin solutions for your construction project. 
-            From design to operations, we've got you covered.
+            From design to operations, we have got you covered.
           </p>
         </div>
 
