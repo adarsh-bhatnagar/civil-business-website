@@ -15,11 +15,10 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Project?
+            Ready to Secure Your Asset Intelligence?
           </h2>
           <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-            Partner with us for enterprise-grade BIM and Digital Twin solutions. 
-            ISO-19650 compliant information management from design through operations.
+            Partner with NirmanIQ for enterprise-grade built-environment intelligence and structured information management from design through operations.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -35,11 +34,11 @@ export default function CTASection() {
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-white/70">
             <a href="tel:+441234567890" className="flex items-center hover:text-bim-teal transition-colors">
               <Phone className="mr-2" size={18} />
-              +44 (0) 123 456 7890
+              +91 8858888155
             </a>
-            <a href="mailto:info@bimconsultancy.com" className="flex items-center hover:text-bim-teal transition-colors">
+            <a href="mailto:info@nirmaniq.com" className="flex items-center hover:text-bim-teal transition-colors">
               <Mail className="mr-2" size={18} />
-              info@bimconsultancy.com
+              nirmaan.iq@outlook.com
             </a>
           </div>
         </motion.div>

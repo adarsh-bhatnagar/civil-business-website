@@ -48,10 +48,10 @@ export default function ProcessFlow() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-bim-charcoal mb-4">
-            ISO-19650 Process Flow
+            Information Delivery Framework
           </h2>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            A clear 5-step process for managing your project information from start to finish.
+            Our structured 5-step approach ensures reliable data flows throughout the asset lifecycle, grounded in international information management standards.
           </p>
         </motion.div>
 

@@ -40,10 +40,10 @@ export default function StandardsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Standards & Compliance
+            Information Integrity & Compliance
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Full compliance with ISO-19650 international standards for enterprise information management.
+            Adherence to international standards ensures information integrity and lifecycle value for enterprise assets.
           </p>
         </motion.div>
 
@@ -81,7 +81,7 @@ export default function StandardsSection() {
           className="text-center"
         >
           <Button href="/iso-19650" variant="secondary">
-            Learn More About ISO-19650
+            View Information Management Framework
           </Button>
         </motion.div>
       </div>

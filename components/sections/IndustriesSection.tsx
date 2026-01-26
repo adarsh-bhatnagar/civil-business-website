@@ -48,10 +48,10 @@ export default function IndustriesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-bim-charcoal mb-4">
-            Industries We Serve
+            Intelligence Across Asset Classes
           </h2>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            Enterprise BIM and Digital Twin solutions across diverse sectors.
+            NirmanIQ delivers enterprise intelligence for complex built environments across diverse sectors.
           </p>
         </motion.div>
 

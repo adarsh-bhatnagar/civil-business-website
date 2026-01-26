@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-bim-deep-blue via-bim-deep-blue/95 to-bim-deep-blue/80">
       {/* Animated Background */}
       <AnimatedBackground />
-      
+
       {/* Floating sparkles */}
       {[...Array(15)].map((_, i) => (
         <motion.div
@@ -50,17 +50,17 @@ export default function Hero() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="inline-block mb-4 px-4 py-1 bg-bim-teal/20 text-bim-teal text-sm font-semibold rounded-full border border-bim-teal/30"
             >
-              ISO-19650 Compliant
+              Following Standards
             </motion.div>
-            
+
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              <span className="block">BIM & Digital Twin</span>
-              <span className="block text-bim-teal">Consultancy</span>
+              <span className="block">Built-Environment</span>
+              <span className="block text-bim-teal">Intelligence</span>
             </h1>
-            
+
             <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl">
-              We help construction companies build smarter. Our 3D digital models and real-time building data 
-              make projects run smoother, cost less, and finish on time.
+              NirmanIQ converts physical assets into reliable digital intelligence. We reduce coordination risk,
+              prevent costly errors, and ensure accurate information flows across design, construction, and operations.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -81,15 +81,15 @@ export default function Hero() {
               className="mt-12 grid grid-cols-3 gap-8"
             >
               <div>
-                <div className="text-3xl font-bold text-bim-teal">500+</div>
+                <div className="text-3xl font-bold text-bim-teal">50+</div>
                 <div className="text-sm text-white/70 mt-1">Projects Delivered</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-bim-teal">ISO-19650</div>
-                <div className="text-sm text-white/70 mt-1">Certified</div>
+                <div className="text-3xl font-bold text-bim-teal">100+</div>
+                <div className="text-sm text-white/70 mt-1">Clients Served</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-bim-teal">15+</div>
+                <div className="text-3xl font-bold text-bim-teal">5+</div>
                 <div className="text-sm text-white/70 mt-1">Years Experience</div>
               </div>
             </motion.div>

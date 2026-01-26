@@ -11,7 +11,7 @@ const navItems = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/digital-twin', label: 'Digital Twin' },
-  { href: '/iso-19650', label: 'ISO-19650 & Compliance' },
+  { href: '/iso-19650', label: 'Information Management & Compliance' },
   { href: '/about', label: 'About' },
   { href: '/team', label: 'Team' },
   { href: '/contact', label: 'Contact' },
@@ -33,15 +33,14 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-bim-deep-blue shadow-lg' : 'bg-bim-deep-blue/95 backdrop-blur-sm'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-bim-deep-blue shadow-lg' : 'bg-bim-deep-blue/95 backdrop-blur-sm'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-bim-teal">BIM</span>
-            <span className="text-2xl font-light text-white">Consultancy</span>
+            <span className="text-2xl font-bold text-bim-teal">Nirmaan</span>
+            <span className="text-2xl font-light text-white">IQ</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -53,11 +52,10 @@ export default function Navigation() {
                   key={item.href}
                   href={item.href}
                   onClick={() => startLoading()}
-                  className={`relative px-3 py-2 text-sm font-medium transition-colors ${
-                    isActive
-                      ? 'text-bim-teal'
-                      : 'text-white/90 hover:text-bim-teal'
-                  }`}
+                  className={`relative px-3 py-2 text-sm font-medium transition-colors ${isActive
+                    ? 'text-bim-teal'
+                    : 'text-white/90 hover:text-bim-teal'
+                    }`}
                 >
                   {item.label}
                   {isActive && (
@@ -110,11 +108,10 @@ export default function Navigation() {
                       setIsOpen(false)
                       startLoading()
                     }}
-                    className={`block px-4 py-3 rounded-md text-base font-medium transition-colors ${
-                      isActive
-                        ? 'text-bim-teal bg-white/5'
-                        : 'text-white/90 hover:text-bim-teal hover:bg-white/5'
-                    }`}
+                    className={`block px-4 py-3 rounded-md text-base font-medium transition-colors ${isActive
+                      ? 'text-bim-teal bg-white/5'
+                      : 'text-white/90 hover:text-bim-teal hover:bg-white/5'
+                      }`}
                   >
                     {item.label}
                   </Link>

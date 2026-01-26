@@ -7,8 +7,8 @@ import LoadingOverlay from '@/components/ui/LoadingOverlay'
 import RouteChangeHandler from '@/components/ui/RouteChangeHandler'
 
 export const metadata: Metadata = {
-  title: 'BIM & Digital Twin Consultancy | Enterprise Solutions',
-  description: 'Professional BIM and Digital Twin consultancy services. ISO-19650 compliant information management for enterprise construction and infrastructure projects.',
+  title: 'NirmanIQ | Built-Environment Intelligence & Enterprise BIM',
+  description: 'Enterprise-grade built-environment intelligence consultancy. NirmanIQ converts physical assets into reliable digital intelligence across design, construction, and operations.',
 }
 
 export default function RootLayout({

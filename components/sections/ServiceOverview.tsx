@@ -2,119 +2,95 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, Building2, Calculator, Users, Box, AlertTriangle, Cpu, Camera, FileText, Wind, Wifi, Ruler, Radar, Layers } from 'lucide-react'
+import { ArrowRight, Building2, AlertTriangle, Camera, FileText, Wind, Wifi, Ruler, Radar, Layers, Box } from 'lucide-react'
 import { useLoading } from '@/contexts/LoadingContext'
 
 const services = [
   {
     icon: Building2,
-    title: 'Design & Modeling',
-    description: 'Professional architectural and engineering design with detailed 3D building models. Create accurate plans that all teams can use.',
+    title: 'BIM Design & 3D Modeling',
+    description: 'Accurate building models that enable coordination across disciplines. Reduce rework by identifying design conflicts early.',
     href: '/services/design-modeling',
     color: 'bg-bim-teal',
     gradient: 'from-bim-teal to-bim-teal/80',
   },
   {
-    icon: Calculator,
-    title: 'Quantity Surveying',
-    description: 'Accurate material quantities and cost estimation from your 3D models. Get precise budgets and avoid cost overruns.',
-    href: '/services/quantity-surveying',
-    color: 'bg-bim-orange',
-    gradient: 'from-bim-orange to-bim-orange/80',
-  },
-  {
-    icon: Users,
-    title: 'Staff Services',
-    description: 'Expert BIM professionals available for your projects. Get skilled team members when you need them.',
-    href: '/services/staff-services',
-    color: 'bg-bim-deep-blue',
-    gradient: 'from-bim-deep-blue to-bim-deep-blue/80',
-  },
-  {
-    icon: Box,
-    title: '3D Modeling',
-    description: 'High-quality 3D building models with LOD 350 specifications. Detailed models ready for construction and coordination.',
-    href: '/services/3d-modeling',
-    color: 'bg-bim-teal',
-    gradient: 'from-bim-teal to-bim-teal/80',
-  },
-  {
     icon: AlertTriangle,
-    title: 'Clash Detection',
-    description: 'Automatically find conflicts between building systems before construction. Save time and money by fixing problems early.',
+    title: 'Clash Detection & Coordination',
+    description: 'Identify spatial conflicts between building systems before construction. Prevent costly on-site rework and schedule delays.',
     href: '/services/clash-detection',
     color: 'bg-bim-orange',
     gradient: 'from-bim-orange to-bim-orange/80',
   },
   {
-    icon: Cpu,
-    title: 'Digital Twin',
-    description: 'Live digital replicas of your building with real-time monitoring. Connect IoT sensors to track performance and optimize operations.',
-    href: '/services/digital-twin',
-    color: 'bg-bim-teal',
-    gradient: 'from-bim-teal to-bim-teal/80',
-  },
-  {
     icon: Camera,
-    title: 'Scan to BIM (LIDAR)',
-    description: 'Convert laser scans of existing buildings into accurate 3D models. Perfect for renovation and retrofit projects.',
+    title: 'Scan to BIM (LiDAR)',
+    description: 'Convert existing conditions into accurate as-built models using laser scanning. Essential for renovation and retrofit projects.',
     href: '/services/scan-to-bim',
     color: 'bg-bim-deep-blue',
     gradient: 'from-bim-deep-blue to-bim-deep-blue/80',
   },
   {
     icon: FileText,
-    title: 'CAD to BIM',
-    description: 'Convert your existing 2D CAD drawings into intelligent 3D BIM models. Modernize your project documentation.',
+    title: 'CAD to BIM Conversion',
+    description: 'Transform legacy 2D drawings into intelligent 3D models. Modernize project documentation and enable BIM workflows.',
     href: '/services/cad-to-bim',
     color: 'bg-bim-teal',
     gradient: 'from-bim-teal to-bim-teal/80',
   },
   {
     icon: Wind,
-    title: 'Air Handling Units',
-    description: 'Specialized MEP modeling for HVAC systems. Detailed air handling unit designs integrated with building models.',
-    href: '/services/air-handling-units',
+    title: 'MEP & HVAC BIM Modeling',
+    description: 'Detailed MEP system models including HVAC and air handling units. Ensure constructability and system integration.',
+    href: '/services/mep-hvac-modeling',
     color: 'bg-bim-orange',
     gradient: 'from-bim-orange to-bim-orange/80',
   },
   {
     icon: Wifi,
-    title: 'Autodesk Tandem (IoT)',
-    description: 'Connect your building with IoT sensors using Autodesk Tandem. Real-time monitoring and predictive maintenance.',
-    href: '/services/autodesk-tandem',
+    title: 'Digital Twin & IoT Integration',
+    description: 'Connect physical assets to real-time data for operational intelligence. Integrate IoT sensors for predictive maintenance.',
+    href: '/services/digital-twin-iot',
     color: 'bg-bim-teal',
     gradient: 'from-bim-teal to-bim-teal/80',
   },
   {
     icon: Ruler,
-    title: 'GFC Drawings',
-    description: 'Good for Construction drawings - detailed, accurate construction documents ready for builders to use on site.',
-    href: '/services/gfc-drawings',
+    title: 'Construction Issue Drawings (GFC / IFC)',
+    description: 'Coordinated construction documentation ready for fabrication. GFC and IFC drawings that minimize field conflicts.',
+    href: '/services/construction-drawings',
     color: 'bg-bim-deep-blue',
     gradient: 'from-bim-deep-blue to-bim-deep-blue/80',
   },
   {
     icon: Radar,
-    title: 'GPR Services',
-    description: 'Ground Penetrating Radar surveys to locate utilities, rebar, and structures hidden underground before construction.',
+    title: 'GPR & Subsurface Investigation',
+    description: 'Ground Penetrating Radar surveys to locate hidden utilities and structures. Prevent costly damage before you dig.',
     href: '/services/gpr-services',
     color: 'bg-bim-orange',
     gradient: 'from-bim-orange to-bim-orange/80',
   },
   {
     icon: Layers,
-    title: 'LOD 350 Modeling',
-    description: 'Level of Development 350 - detailed models with fabrication-level detail. Perfect for coordination and construction.',
-    href: '/services/lod-350',
+    title: 'LOD-Based BIM Modeling (Up to LOD 650)',
+    description: 'Level of Development modeling from conceptual through as-built. Match model detail to project phase requirements.',
+    href: '/services/lod-modeling',
     color: 'bg-bim-teal',
     gradient: 'from-bim-teal to-bim-teal/80',
+  },
+  {
+    icon: Box,
+    title: 'Scan to GIS',
+    description: 'Integrate reality capture with Geographic Information Systems. Bridge building-scale BIM with site-scale GIS.',
+    href: '/services/scan-to-gis',
+    color: 'bg-bim-deep-blue',
+    gradient: 'from-bim-deep-blue to-bim-deep-blue/80',
   },
 ]
 
 export default function ServiceOverview() {
   const { startLoading } = useLoading()
-  
+
   return (
     <section className="py-24 bg-bim-concrete">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,7 +105,7 @@ export default function ServiceOverview() {
             Our Services
           </h2>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            Complete solutions for your building project, from initial design through daily operations.
+            Comprehensive solutions across design, construction, and operations. Reliable digital intelligence for the entire asset lifecycle.
           </p>
         </motion.div>
 
@@ -150,7 +126,7 @@ export default function ServiceOverview() {
                 <motion.div
                   className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
                 />
-                
+
                 {/* Icon with animation */}
                 <motion.div
                   className={`relative w-20 h-20 ${service.color} rounded-xl flex items-center justify-center mb-6 shadow-lg`}
@@ -164,7 +140,7 @@ export default function ServiceOverview() {
                     transition={{ repeat: Infinity, duration: 2, delay: index * 0.2 }}
                   />
                 </motion.div>
-                
+
                 <h3 className="text-2xl font-semibold text-bim-charcoal mb-3 relative z-10">
                   {service.title}
                 </h3>

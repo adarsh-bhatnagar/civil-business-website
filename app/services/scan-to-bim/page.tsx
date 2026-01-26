@@ -2,53 +2,52 @@ import { Metadata } from 'next'
 import ServiceDetail from '@/components/services/ServiceDetail'
 
 export const metadata: Metadata = {
-  title: 'Scan to BIM (LIDAR) | Services',
-  description: 'Convert laser scans of existing buildings into accurate 3D BIM models.',
+  title: 'Scan to BIM (LiDAR) | NirmanIQ',
+  description: 'Convert high-precision laser scans into accurate digital as-built intelligence.',
 }
 
 export default function ScanToBIMPage() {
   return (
     <ServiceDetail
-      title="Scan to BIM (LIDAR)"
-      description="Use LIDAR laser scanning to capture existing buildings accurately, then convert scans into detailed 3D BIM models."
-      problem="Renovating existing buildings is difficult without accurate drawings. Traditional measuring is slow and misses details, leading to design mistakes and construction problems."
-      solution="We use LIDAR laser scanners to quickly capture millions of precise measurements of your building. Then we convert these scans into accurate 3D BIM models your design team can use."
+      title="Scan to BIM (LiDAR)"
+      description="Capture reality with sub-millimeter precision. We convert billion-point LiDAR scans into structured, as-built building intelligence."
+      problem="Renovating or retrofitting complex assets without accurate as-built data leads to design assumptions that fail during installation, causing significant escalation in project costs."
+      solution="We deploy professional-grade LiDAR scanners to create a high-fidelity digital snapshot of existing conditions. This 'Point Cloud' is then intelligently modeled to create a reliable BIM foundation for design, engineering, and facility management."
       workflow={[
         {
-          step: 'Site Survey Planning',
-          description: 'We visit your site, assess the building, and plan where to scan to capture everything you need.',
+          step: 'Capture Strategy',
+          description: 'We establish a scanning network and control points to ensure absolute spatial accuracy across the entire asset.',
         },
         {
-          step: 'LIDAR Scanning',
-          description: 'We use professional laser scanners to capture millions of precise measurements of your building in hours.',
+          step: 'LiDAR Reality Capture',
+          description: 'Our field specialists use terrestrial and mobile laser scanners to capture dense spatial data of architecture, structure, and MEP systems.',
         },
         {
-          step: 'Point Cloud Processing',
-          description: 'We combine all scan data, clean it up, and create a complete 3D point cloud of your building.',
+          step: 'Point Cloud Registration',
+          description: 'Individual scan stations are registered into a single, unified 3D point cloud, validated against control measurements.',
         },
         {
-          step: 'Model Creation',
-          description: 'We convert the point cloud into a detailed 3D BIM model with walls, floors, ceilings, and MEP systems.',
+          step: 'As-Built Intelligence Modeling',
+          description: 'The point cloud is converted into a structured BIM model, differentiating between original design intent and actual as-built deviations.',
         },
         {
-          step: 'Quality & Delivery',
-          description: 'We verify accuracy, add missing information, and deliver complete models ready for design work.',
+          step: 'Deviation & Quality Analysis',
+          description: 'We perform a final audit to ensure the generated model meets the required accuracy tolerances and information standards.',
         },
       ]}
       deliverables={[
-        'LIDAR Scan Data',
-        '3D Point Clouds',
-        'As-Built BIM Models',
-        'Accuracy Reports',
-        'Comparison with Original Drawings',
-        'Renovation-Ready Models',
-        'Point Cloud Viewers',
+        'Registered 3D Point Clouds',
+        'As-Built 3D BIM Models',
+        'Reality Capture Accuracy Reports',
+        'Model-to-Point Cloud Deviation Logs',
+        'Spherical 360 Site Photography',
+        'Renovation-Ready Federated Models',
       ]}
       standards={[
-        'ISO-19650-2 & 3',
-        'Survey Industry Standards',
-        'Point Cloud Best Practices',
-        'BS EN ISO 16739 (IFC)',
+        'ISO-19650-3 Asset Information Management',
+        'RICS Specification for Surveys',
+        'USIBD Level of Accuracy (LOA) Standards',
+        'Point Cloud Interoperability Formats',
       ]}
     />
   )

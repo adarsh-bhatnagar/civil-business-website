@@ -14,10 +14,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Building2 className="text-bim-teal" size={24} />
-              <span className="text-xl font-bold">BIM Consultancy</span>
+              <span className="text-xl font-bold">NirmaanIQ</span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              Enterprise-grade BIM and Digital Twin solutions. ISO-19650 compliant information management for construction and infrastructure.
+              Built-environment intelligence consultancy. Converting physical assets into reliable digital intelligence across design, construction, and operations.
             </p>
           </div>
 
@@ -87,19 +87,19 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <Mail className="text-bim-teal mt-0.5 flex-shrink-0" size={16} />
                 <a href="mailto:info@bimconsultancy.com" className="text-white/70 hover:text-bim-teal transition-colors">
-                  info@bimconsultancy.com
+                  nirmaan.iq@outlook.com, nirmaan.iq@gmail.com
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <Phone className="text-bim-teal mt-0.5 flex-shrink-0" size={16} />
                 <a href="tel:+441234567890" className="text-white/70 hover:text-bim-teal transition-colors">
-                  +44 (0) 123 456 7890
+                  +91 8858888155, +91 7080313566
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="text-bim-teal mt-0.5 flex-shrink-0" size={16} />
                 <span className="text-white/70">
-                  London, United Kingdom
+                  Lucknow, Uttar Pradesh, India
                 </span>
               </li>
             </ul>
@@ -108,7 +108,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
-            <p>&copy; {new Date().getFullYear()} BIM Consultancy. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} NirmanIQ. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="hover:text-bim-teal transition-colors">Privacy Policy</Link>
               <Link href="#" className="hover:text-bim-teal transition-colors">Terms of Service</Link>

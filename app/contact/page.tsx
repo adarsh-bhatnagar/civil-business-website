@@ -1,9 +1,16 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
+import { useLoading } from '@/contexts/LoadingContext'
+import { toast } from 'react-toastify'
+
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -13,18 +20,55 @@ export default function ContactPage() {
     phone: '',
     message: '',
   })
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const { startLoading } = useLoading()
+  const [isLoading, setIsLoading] = useState(false)
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
+
+    try {
+      setIsLoading(true)
+      await emailjs.send(
+        SERVICE_ID!,
+        TEMPLATE_ID!,
+        {
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || 'N/A',
+          phone: formData.phone || 'N/A',
+          message: formData.message,
+          time: new Date().toLocaleString('en-IN', {
+            dateStyle: 'medium',
+            timeStyle: 'short',
+          }),
+        },
+        PUBLIC_KEY!
+      )
+
+      toast.success('Message sent successfully.')
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        phone: '',
+        message: '',
+      })
+    } catch (error) {
+      console.error('EmailJS Error:', error)
+      toast.error('Failed to send message. Please try again later.')
+    } finally {
+      setIsLoading(false)
+    }
   }
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
+  }
+  if (isLoading) {
+    startLoading();
   }
 
   return (
@@ -64,7 +108,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-bim-charcoal mb-1">Email</h3>
                   <a href="mailto:info@bimconsultancy.com" className="text-bim-charcoal/70 hover:text-bim-teal transition-colors">
-                    info@bimconsultancy.com
+                    nirmaan.iq@outlook.com, nirmaan.iq@gmail.com
                   </a>
                 </div>
               </div>
@@ -76,7 +120,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-bim-charcoal mb-1">Phone</h3>
                   <a href="tel:+441234567890" className="text-bim-charcoal/70 hover:text-bim-teal transition-colors">
-                    +44 (0) 123 456 7890
+                    +91 8858888155, +91 7080313566
                   </a>
                 </div>
               </div>
@@ -88,7 +132,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-bim-charcoal mb-1">Office</h3>
                   <p className="text-bim-charcoal/70">
-                    London, United Kingdom
+                    Lucknow, Uttar Pradesh, India
                   </p>
                 </div>
               </div>
@@ -98,13 +142,13 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
               <div className="space-y-2 text-white/80">
                 <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 6:00 PM GMT</span>
+                  <span>All Days</span>
+                  <span>9:00 AM - 6:00 PM IST</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Saturday - Sunday</span>
+                {/* <div className="flex justify-between">
+                  <span>Sunday</span>
                   <span>Closed</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </motion.div>
@@ -120,7 +164,7 @@ export default function ContactPage() {
             <h2 className="text-3xl font-semibold text-bim-charcoal mb-6">
               Send us a Message
             </h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={(e) => handleSubmit(e)} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-bim-charcoal mb-2">
                   Name *

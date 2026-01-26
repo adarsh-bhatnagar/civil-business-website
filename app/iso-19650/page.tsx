@@ -107,11 +107,11 @@ export default function ISO19650Page() {
           className="text-center mb-16"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-bim-charcoal mb-6">
-            ISO-19650 & Compliance
+            Information Management & Compliance
           </h1>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            ISO-19650 is the international standard for managing building project information. 
-            It provides a clear process for organizing and sharing project data from start to finish.
+            Structured information management ensures reliable data flows throughout the project lifecycle.
+            ISO-19650 provides the framework for organizing, sharing, and maintaining building information from design through operations.
           </p>
         </motion.div>
 
@@ -268,7 +268,7 @@ export default function ISO19650Page() {
               Ready to Implement ISO-19650?
             </h3>
             <p className="text-bim-charcoal/70 mb-6 max-w-2xl mx-auto">
-              Our compliance services help enterprises implement ISO-19650 standards 
+              Our compliance services help enterprises implement ISO-19650 standards
               and establish robust information management systems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

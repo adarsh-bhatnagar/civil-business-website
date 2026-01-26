@@ -42,12 +42,11 @@ export default function AboutPage() {
             About Us
           </h1>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            We have been helping construction companies build smarter for over 15 years. 
+            We have been helping construction companies build smarter for over 5 years.
             We specialize in 3D building models and digital building management.
           </p>
         </motion.div>
 
-        {/* Mission */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,12 +58,15 @@ export default function AboutPage() {
             Our Mission
           </h2>
           <p className="text-lg text-bim-charcoal/70 leading-relaxed mb-6">
-            Our mission is simple: help construction companies build better projects. We use 3D digital models 
-            and smart building technology to help you finish on time, stay on budget, and avoid costly mistakes.
+            NirmanIQ converts physical assets into reliable digital intelligence. We reduce risk, prevent coordination
+            failures, and ensure accurate information flows across design, construction, and operations. Our work is
+            grounded in engineering discipline, structured workflows, and adherence to information management standards—not
+            marketing promises.
           </p>
           <p className="text-lg text-bim-charcoal/70 leading-relaxed">
-            We bring years of real-world experience to every project. We follow international standards, 
-            use proven methods, and deliver quality work that makes a difference.
+            We exist to solve a fundamental problem: construction projects fail when information is inconsistent,
+            inaccessible, or unreliable. We deliver structured digital intelligence that reduces lifecycle costs,
+            prevents errors, and enables informed decision-making from concept through facility management.
           </p>
         </motion.div>
 
@@ -119,21 +121,21 @@ export default function AboutPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-4xl font-bold text-bim-teal mb-2">500+</div>
+              <div className="text-4xl font-bold text-bim-teal mb-2">50+</div>
               <div className="text-white/80">Projects Delivered</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-bim-teal mb-2">15+</div>
+              <div className="text-4xl font-bold text-bim-teal mb-2">5+</div>
               <div className="text-white/80">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-bim-teal mb-2">ISO-19650</div>
-              <div className="text-white/80">Certified</div>
+              <div className="text-4xl font-bold text-bim-teal mb-2">100+</div>
+              <div className="text-white/80">Clients Served</div>
             </div>
           </div>
           <p className="mt-8 text-white/80 leading-relaxed">
-            We have worked on all types of projects: office buildings, hospitals, factories, infrastructure, 
-            and more. We have helped contractors, developers, and building owners set up better information 
+            We have worked on all types of projects: office buildings, hospitals, factories, infrastructure,
+            and more. We have helped contractors, developers, and building owners set up better information
             management systems and follow industry standards.
           </p>
         </motion.div>

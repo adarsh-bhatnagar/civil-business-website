@@ -1,55 +1,66 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import ServiceDetail from '@/components/services/ServiceDetail'
+import clashDetectionImg from '@/app/assets/clash_detection.jpg'
 
 export const metadata: Metadata = {
-  title: 'Clash Detection | Services',
-  description: 'Automatically find conflicts between building systems before construction starts.',
+  title: 'Clash Detection & Coordination | NirmanIQ',
+  description: 'Identify spatial conflicts between building systems before construction begins.',
 }
 
 export default function ClashDetectionPage() {
   return (
     <ServiceDetail
-      title="Clash Detection"
-      description="Find conflicts between building systems automatically before construction. Fix problems early and save time and money."
-      problem="Different building systems (structure, MEP, architecture) often conflict with each other. Finding these problems during construction is expensive and causes delays."
-      solution="We use automated clash detection software to find conflicts in your 3D models before construction starts. We identify problems, prioritize them, and help resolve them quickly."
+      title="Clash Detection & Coordination"
+      description="Identify spatial conflicts and coordination failures before they reach the site. We ensure your building systems work together seamlessly."
+      problem="Unresolved spatial conflicts between MEP, structure, and architecture lead to emergency field fixes, schedule overruns, and wasted materials."
+      solution="We perform systematic, automated clash detection across all disciplines. Our process doesn't just find clashes; it manages their resolution through structured coordination, ensuring a constructible design."
       workflow={[
         {
-          step: 'Model Preparation',
-          description: 'We gather all discipline models (architectural, structural, MEP) and prepare them for clash detection.',
+          step: 'Model Federation',
+          description: 'We aggregate multi-discipline models into a unified coordination environment, ensuring all systems are correctly positioned.',
         },
         {
-          step: 'Automated Detection',
-          description: 'Our software automatically scans models and identifies where different systems conflict or overlap.',
+          step: 'Automated Conflict Identification',
+          description: 'Using advanced coordination software, we run rule-based tests to identify hard, soft, and workflow clashes.',
         },
         {
-          step: 'Clash Analysis',
-          description: 'We analyze each clash, determine severity, and prioritize which conflicts need immediate attention.',
+          step: 'Clash Analysis & Prioritization',
+          description: 'We filter results to remove duplicates and ignore non-critical issues, focusing on "real" clashes that impact constructability.',
         },
         {
-          step: 'Resolution Planning',
-          description: 'We work with design teams to develop solutions for each clash and update models accordingly.',
+          step: 'Structured Coordination Workshops',
+          description: 'We lead coordination meetings to resolve prioritized conflicts, ensuring technical feasible solutions are implemented.',
         },
         {
-          step: 'Verification',
-          description: 'We re-run clash detection to verify all conflicts are resolved before construction begins.',
+          step: 'Resolution Verification',
+          description: 'We verify that agreed-upon changes are correctly updated in the source models and run final "sign-off" coordination checks.',
         },
       ]}
       deliverables={[
-        'Clash Detection Reports',
-        'Prioritized Clash Lists',
-        'Resolution Recommendations',
-        'Updated Models',
-        'Verification Reports',
-        'Coordination Meeting Support',
-        'Ongoing Monitoring',
+        'Prioritized Clash Matrix',
+        'Coordination Issue Logs',
+        'Resolution Status Reports',
+        'Coordinated Federated Models',
+        'Constructability Review Documentation',
+        'Meeting Minutes and Action Items',
       ]}
       standards={[
-        'ISO-19650-2',
-        'Industry Clash Tolerance Standards',
-        'Project-Specific Requirements',
-        'Best Practice Guidelines',
+        'ISO-19650-2 Coordination Workflows',
+        'Industry Standard Clash Tolerances',
+        'Project BIM Execution Plan (BEP)',
+        'Building System Clearance Requirements',
       ]}
+      visual={
+        <div className="relative w-full h-full min-h-[400px]">
+          <Image
+            src={clashDetectionImg}
+            alt="Automated Clash Detection and System Coordination"
+            fill
+            className="object-cover"
+          />
+        </div>
+      }
     />
   )
 }

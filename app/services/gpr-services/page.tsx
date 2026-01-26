@@ -2,53 +2,52 @@ import { Metadata } from 'next'
 import ServiceDetail from '@/components/services/ServiceDetail'
 
 export const metadata: Metadata = {
-  title: 'GPR Services | Services',
-  description: 'Ground Penetrating Radar surveys to locate utilities and structures hidden underground.',
+  title: 'GPR & Subsurface Investigation | NirmanIQ',
+  description: 'Locate hidden utilities and subsurface structures using high-frequency electromagnetic radar.',
 }
 
 export default function GPRServicesPage() {
   return (
     <ServiceDetail
-      title="GPR Services (Ground Penetrating Radar)"
-      description="Use Ground Penetrating Radar to see what's hidden underground. Locate utilities, rebar, and structures before you dig."
-      problem="Digging without knowing what's underground is risky. Hitting utilities or rebar causes expensive damage, delays, and safety hazards."
-      solution="We use Ground Penetrating Radar to scan underground and create maps showing exactly where utilities, rebar, and structures are located. Dig safely and avoid costly surprises."
+      title="GPR & Subsurface Investigation"
+      description="See through concrete and soil with electromagnetic precision. We locate hidden utilities, rebar, and subsurface structures before they impact your project."
+      problem="Undocumented underground utilities and hidden structural elements pose significant risks to safety, schedules, and budgets during excavation and renovation."
+      solution="We utilize high-frequency Ground Penetrating Radar (GPR) to map subsurface conditions without destructive investigation. Our specialists interpret radar signatures to provide accurate 3D locations of hidden assets, allowing for informed site planning."
       workflow={[
         {
-          step: 'Site Assessment',
-          description: 'We visit your site, understand your needs, and plan the GPR survey area.',
+          step: 'Site Context Assessment',
+          description: 'We review existing utility maps and heritage records to develop a targeted scanning strategy for the site.',
         },
         {
-          step: 'GPR Scanning',
-          description: 'We use professional GPR equipment to scan underground, detecting utilities, rebar, and structures.',
+          step: 'High-Frequency Scouting',
+          description: 'Our technicians deploy GPR systems to scan the target area, capturing electromagnetic reflections from subsurface anomalies.',
         },
         {
-          step: 'Data Processing',
-          description: 'We process scan data, interpret results, and identify what we found underground.',
+          step: 'Signal Interpretation',
+          description: 'We process raw radar data using specialized software to differentiate between utilities, voids, rebar, and geological features.',
         },
         {
-          step: 'Mapping & Reporting',
-          description: 'We create detailed maps showing locations of utilities, rebar, and structures with depth information.',
+          step: 'Spatial Mapping',
+          description: 'Identified features are mapped into 3D space, providing depth and orientation data for every detected subsurface asset.',
         },
         {
-          step: 'Integration',
-          description: 'We integrate GPR findings with your BIM models so designers can plan around existing infrastructure.',
+          step: 'Digital Twin Integration',
+          description: 'Findings are integrated with BIM or GIS environments, ensuring subsurface risks are visible to all project stakeholders.',
         },
       ]}
       deliverables={[
-        'GPR Survey Reports',
-        'Utility Location Maps',
-        'Rebar Detection Maps',
-        'Depth Information',
-        'BIM Integration',
-        'Risk Assessment',
-        'Recommendations',
+        'Subsurface Utility Maps',
+        'Concrete Scanning & Rebar Layouts',
+        'Comprehensive GPR Survey Reports',
+        '3D Utility Models (BIM/GIS Integrated)',
+        'Site Risk Assessment Documentation',
+        'Underground Asset Inventory',
       ]}
       standards={[
-        'ASTM D6432',
-        'Industry GPR Standards',
-        'Utility Detection Standards',
-        'Safety Guidelines',
+        'ASCE 38-02 Standard for Underground Utilities',
+        'ASTM D6432 GPR Survey Standards',
+        'Local Utility Detection Regulations',
+        'Safety & Excavation Guidelines',
       ]}
     />
   )

@@ -2,53 +2,52 @@ import { Metadata } from 'next'
 import ServiceDetail from '@/components/services/ServiceDetail'
 
 export const metadata: Metadata = {
-  title: 'CAD to BIM | Services',
-  description: 'Convert your existing 2D CAD drawings into intelligent 3D BIM models.',
+  title: 'CAD to BIM Conversion | NirmanIQ',
+  description: 'Transform legacy 2D CAD documentation into intelligent 3D building intelligence.',
 }
 
 export default function CADToBIMPage() {
   return (
     <ServiceDetail
-      title="CAD to BIM"
-      description="Transform your 2D CAD drawings into intelligent 3D BIM models. Modernize your project documentation and unlock BIM benefits."
-      problem="Many projects still use 2D CAD drawings that lack intelligence and 3D coordination. This limits collaboration and makes it harder to find problems early."
-      solution="We convert your existing CAD drawings into intelligent 3D BIM models. This gives you all the benefits of BIM without starting from scratch."
+      title="CAD to BIM Conversion"
+      description="Modernize legacy assets by converting 2D technical drawings into intelligent building models. We transform static lines into actionable digital intelligence."
+      problem="Legacy 2D drawings lack the spatial intelligence and data structure required for modern coordination, resulting in fragmented information and unreliable cost estimates."
+      solution="We interpret and reconstruct legacy documentation into high-fidelity BIM models. This process doesn't just add a third dimension; it adds data structure, system intelligence, and spatial coordination to your existing asset records."
       workflow={[
         {
-          step: 'Drawing Review',
-          description: 'We review your CAD drawings, understand the design intent, and plan the conversion process.',
+          step: 'Documentation Audit',
+          description: 'We review existing CAD sets to assess data validity and identify information gaps before conversion begins.',
         },
         {
-          step: 'Model Structure Setup',
-          description: 'We set up the BIM model structure, define levels, grids, and establish modeling standards.',
+          step: 'Intelligence Framework Setup',
+          description: 'We establish the BIM standards, classification systems, and LOD requirements necessary for the converted model.',
         },
         {
-          step: '3D Model Creation',
-          description: 'We build 3D models from your 2D drawings, interpreting design intent and creating intelligent components.',
+          step: 'Digital Reconstruction',
+          description: 'Our engineers reconstruct the asset in 3D, interpreting design intent and cross-referencing multiple drawing sets for accuracy.',
         },
         {
-          step: 'Data Enrichment',
-          description: 'We add properties, materials, and metadata to make models intelligent and useful for coordination.',
+          step: 'Information Enrichment',
+          description: 'We embed technical attributes and specifications into model elements, ensuring the model is useful for coordination and management.',
         },
         {
-          step: 'Quality & Delivery',
-          description: 'We verify accuracy against original drawings and deliver complete BIM models ready for use.',
+          step: 'Federation & Validation',
+          description: 'Converted models are validated for spatial accuracy and consistency with the source documentation.',
         },
       ]}
       deliverables={[
-        '3D BIM Models from CAD',
-        'Intelligent Components',
-        'Model Documentation',
-        'Conversion Reports',
-        'Accuracy Verification',
-        'Updated Drawings',
-        'BIM-Ready Models',
+        'Structured 3D BIM Models',
+        'Intelligence-Enriched Components',
+        'Conversion Integrity Reports',
+        'Updated Coordinated Documentation',
+        'Asset Information Model (AIM) Foundation',
+        'Interoperable Model Formats (IFC)',
       ]}
       standards={[
-        'ISO-19650-2',
-        'BS EN ISO 16739 (IFC)',
-        'Original CAD Standards',
-        'BIM Modeling Standards',
+        'ISO-19650-2 Information Production',
+        'Uniclass or OmniClass Classification',
+        'COBie Data Requirements',
+        'National BIM Standards Compliance',
       ]}
     />
   )

@@ -38,10 +38,10 @@ export default function ProblemSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-bim-charcoal mb-4">
-            Common Construction Problems
+            Critical Built-Environment Challenges
           </h2>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            Most construction projects struggle with the same issues: lost information, delays, and going over budget.
+            Fragmented data and uncoordinated workflows increase project risk. NirmanIQ addresses the fundamental information failures that lead to delays and cost overruns.
           </p>
         </motion.div>
 
