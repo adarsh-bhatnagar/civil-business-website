@@ -5,31 +5,32 @@ import { Award, Users, CheckCircle2, Building2 } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Image from 'next/image'
 import adarsh from '@/app/assets/adarsh.png'
-import zerik from '@/app/assets/zerik_adeel.jpg'
-import salim from '@/app/assets/salim.jpg'
+import zerik from '@/app/assets/zerik_adeel_new.png'
+import salim from '@/app/assets/salim_usmani.jpeg'
 
 const leadership = [
   {
     name: 'Zerik Adeel',
     image: zerik,
-    role: 'Engineer (Planning & Surveying)',
+    role: 'Civil Engineer (Planning & Designing)',
     expertise: 'Infrastructure Planning, BIM-Based Drafting, Engineering Design Coordination',
+    membership: 'AMIE (Associate Member of the Institution of Engineers) and American Society of Civil Engineers (ASCE)',
     experience: 'Civil Engineering graduate with hands-on experience across infrastructure and building projects, including large-scale transit and public works',
-    responsibility: 'Responsible for engineering planning, BIM-based drafting, and ensuring site-feasible design coordination aligned with project standards and construction requirements.',
+    responsibility: 'Responsible for engineering planning, BIM-based drafting, and ensuring site-feasible design coordination aligned with project standards and construction requirements',
   },
   {
     name: 'Salim Usmani',
     image: salim,
-    role: 'Engineer (Site & Construction)',
+    role: 'Civil Engineer (Construction Management)',
     expertise: 'High-Rise Building Construction, Tunnel Engineering, Site Supervision & Safety',
     experience: 'Civil Engineer with hands-on experience across high-rise residential buildings and heavy engineering tunnel infrastructure projects.',
-    responsibility: 'Responsible for site supervision, tunnel construction support including drill-and-blast operations, shotcreting, rock bolting, and ensuring construction safety and quality compliance on site.',
+    responsibility: 'Responsible for site supervision, tunnel construction support  operations, shotcreting, rock bolting, and ensuring construction safety and quality compliance on site.',
   }
   ,
   {
     name: 'Adarsh Bhatnagar',
     image: adarsh,
-    role: 'Engineer (IoT & Digital Systems)',
+    role: 'Software Engineer (IoT, Software & Digital Systems)',
     expertise: 'Built-Environment Digital Systems, BIM Data Pipelines, Platform & Workflow Engineering',
     experience: 'Computer Science and IT professional with hands-on experience in designing and implementing digital systems that support BIM workflows, information management, and asset data integration.',
     responsibility: 'Responsible for bridging engineering domain requirements with scalable digital systems, ensuring that BIM, Digital Twin, and information workflows are reliable, structured, and production-ready.',
@@ -223,6 +224,12 @@ export default function TeamPage() {
                     <span className="font-semibold text-bim-charcoal">Responsibility:</span>
                     <p className="text-bim-charcoal/70 mt-1">{leader.responsibility}</p>
                   </div>
+                  {leader.membership && (
+                    <div>
+                      <span className="font-semibold text-bim-charcoal">Membership:</span>
+                      <p className="text-bim-charcoal/70 mt-1">{leader.membership}</p>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}
