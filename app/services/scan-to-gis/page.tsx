@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import ServiceDetail from '@/components/services/ServiceDetail'
 
 export const metadata: Metadata = {
-    title: 'Scan to GIS Integration | NirmanIQ',
+    title: 'Scan to GIS Integration | NirmaanIQ',
     description: 'Integrate reality capture data with Geographic Information Systems for infrastructure and site planning.',
 }
 

@@ -58,7 +58,7 @@ export default function AboutPage() {
             Our Mission
           </h2>
           <p className="text-lg text-bim-charcoal/70 leading-relaxed mb-6">
-            NirmanIQ converts physical assets into reliable digital intelligence. We reduce risk, prevent coordination
+            NirmaanIQ converts physical assets into reliable digital intelligence. We reduce risk, prevent coordination
             failures, and ensure accurate information flows across design, construction, and operations. Our work is
             grounded in engineering discipline, structured workflows, and adherence to information management standards—not
             marketing promises.

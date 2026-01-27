@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Building2, Calculator, Users, Box, AlertTriangle, Cpu, Camera, FileText, Wind, Wifi, Ruler, Radar, Layers, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Services | NirmanIQ - Built-Environment Intelligence',
+  title: 'Services | NirmaanIQ - Built-Environment Intelligence',
   description: 'Comprehensive BIM and Digital Twin services including design, modeling, clash detection, reality capture, and digital twin integration.',
 }
 

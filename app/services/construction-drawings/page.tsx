@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import ServiceDetail from '@/components/services/ServiceDetail'
 
 export const metadata: Metadata = {
-  title: 'Construction Issue Drawings (GFC / IFC) | NirmanIQ',
+  title: 'Construction Issue Drawings (GFC / IFC) | NirmaanIQ',
   description: 'Coordinated construction documentation ready for fabrication and installation.',
 }
 

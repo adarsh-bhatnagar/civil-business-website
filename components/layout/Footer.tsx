@@ -108,7 +108,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
-            <p>&copy; {new Date().getFullYear()} NirmanIQ. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} NirmaanIQ. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="hover:text-bim-teal transition-colors">Privacy Policy</Link>
               <Link href="#" className="hover:text-bim-teal transition-colors">Terms of Service</Link>

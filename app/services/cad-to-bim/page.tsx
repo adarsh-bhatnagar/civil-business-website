@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import ServiceDetail from '@/components/services/ServiceDetail'
 
 export const metadata: Metadata = {
-  title: 'CAD to BIM Conversion | NirmanIQ',
+  title: 'CAD to BIM Conversion | NirmaanIQ',
   description: 'Transform legacy 2D CAD documentation into intelligent 3D building intelligence.',
 }
 

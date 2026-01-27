@@ -4,7 +4,7 @@ import ServiceDetail from '@/components/services/ServiceDetail'
 import designModelingImg from '@/app/assets/bim_designer.jpg'
 
 export const metadata: Metadata = {
-  title: 'BIM Design & 3D Modeling | NirmanIQ',
+  title: 'BIM Design & 3D Modeling | NirmaanIQ',
   description: 'Professional architectural and engineering design with detailed 3D building models.',
 }
 

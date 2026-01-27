@@ -18,7 +18,7 @@ export default function CTASection() {
             Ready to Secure Your Asset Intelligence?
           </h2>
           <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-            Partner with NirmanIQ for enterprise-grade built-environment intelligence and structured information management from design through operations.
+            Partner with NirmaanIQ for enterprise-grade built-environment intelligence and structured information management from design through operations.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

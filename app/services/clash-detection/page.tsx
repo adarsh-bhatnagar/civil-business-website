@@ -4,7 +4,7 @@ import ServiceDetail from '@/components/services/ServiceDetail'
 import clashDetectionImg from '@/app/assets/clash_detection.jpg'
 
 export const metadata: Metadata = {
-  title: 'Clash Detection & Coordination | NirmanIQ',
+  title: 'Clash Detection & Coordination | NirmaanIQ',
   description: 'Identify spatial conflicts between building systems before construction begins.',
 }
 

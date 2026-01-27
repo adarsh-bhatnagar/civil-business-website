@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import ServiceDetail from '@/components/services/ServiceDetail'
 
 export const metadata: Metadata = {
-  title: 'GPR & Subsurface Investigation | NirmanIQ',
+  title: 'GPR & Subsurface Investigation | NirmaanIQ',
   description: 'Locate hidden utilities and subsurface structures using high-frequency electromagnetic radar.',
 }
 

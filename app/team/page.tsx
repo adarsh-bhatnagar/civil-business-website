@@ -10,11 +10,11 @@ import salim from '@/app/assets/salim_usmani.jpeg'
 
 const leadership = [
   {
-    name: 'Zerik Adeel',
+    name: 'Xerik Adeel',
     image: zerik,
     role: 'Civil Engineer (Planning & Designing)',
     expertise: 'Infrastructure Planning, BIM-Based Drafting, Engineering Design Coordination',
-    membership: 'AMIE (Associate Member of the Institution of Engineers) and American Society of Civil Engineers (ASCE)',
+    membership: 'Associate Member of the Institution of Engineers (AMIE) & American Society of Civil Engineers (ASCE)',
     experience: 'Civil Engineering graduate with hands-on experience across infrastructure and building projects, including large-scale transit and public works',
     responsibility: 'Responsible for engineering planning, BIM-based drafting, and ensuring site-feasible design coordination aligned with project standards and construction requirements',
   },
@@ -164,7 +164,7 @@ export default function TeamPage() {
             Our Responsibility
           </h2>
           <p className="text-white/90 leading-relaxed mb-4">
-            NirmanIQ exists to ensure information integrity across the built environment lifecycle. We are accountable
+            NirmaanIQ exists to ensure information integrity across the built environment lifecycle. We are accountable
             for delivering accurate, coordinated, and accessible digital intelligence that enables better decision-making
             at every project phase.
           </p>

@@ -41,7 +41,7 @@ export default function ProblemSection() {
             Critical Built-Environment Challenges
           </h2>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            Fragmented data and uncoordinated workflows increase project risk. NirmanIQ addresses the fundamental information failures that lead to delays and cost overruns.
+            Fragmented data and uncoordinated workflows increase project risk. NirmaanIQ addresses the fundamental information failures that lead to delays and cost overruns.
           </p>
         </motion.div>
 

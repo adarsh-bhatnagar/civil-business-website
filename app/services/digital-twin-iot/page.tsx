@@ -4,7 +4,7 @@ import ServiceDetail from '@/components/services/ServiceDetail'
 import digitalTwinImg from '@/app/assets/digital_twin_iot.jpg'
 
 export const metadata: Metadata = {
-  title: 'Digital Twin & IoT Integration | NirmanIQ',
+  title: 'Digital Twin & IoT Integration | NirmaanIQ',
   description: 'Connect physical assets to real-time data for operational intelligence.',
 }
 

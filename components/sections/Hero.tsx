@@ -59,7 +59,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl">
-              NirmanIQ converts physical assets into reliable digital intelligence. We reduce coordination risk,
+              NirmaanIQ converts physical assets into reliable digital intelligence. We reduce coordination risk,
               prevent costly errors, and ensure accurate information flows across design, construction, and operations.
             </p>
 

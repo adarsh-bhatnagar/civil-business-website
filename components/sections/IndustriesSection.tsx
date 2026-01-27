@@ -51,7 +51,7 @@ export default function IndustriesSection() {
             Intelligence Across Asset Classes
           </h2>
           <p className="text-xl text-bim-charcoal/70 max-w-3xl mx-auto">
-            NirmanIQ delivers enterprise intelligence for complex built environments across diverse sectors.
+            NirmaanIQ delivers enterprise intelligence for complex built environments across diverse sectors.
           </p>
         </motion.div>
 

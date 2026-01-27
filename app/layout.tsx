@@ -7,8 +7,8 @@ import LoadingOverlay from '@/components/ui/LoadingOverlay'
 import RouteChangeHandler from '@/components/ui/RouteChangeHandler'
 
 export const metadata: Metadata = {
-  title: 'NirmanIQ | Built-Environment Intelligence & Enterprise BIM',
-  description: 'Enterprise-grade built-environment intelligence consultancy. NirmanIQ converts physical assets into reliable digital intelligence across design, construction, and operations.',
+  title: 'NirmaanIQ | Built-Environment Intelligence & Enterprise BIM',
+  description: 'Enterprise-grade built-environment intelligence consultancy. NirmaanIQ converts physical assets into reliable digital intelligence across design, construction, and operations.',
 }
 
 export default function RootLayout({

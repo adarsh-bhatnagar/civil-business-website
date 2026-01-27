@@ -4,7 +4,7 @@ import ServiceDetail from '@/components/services/ServiceDetail'
 import ahuImg from '@/app/assets/air_handling_unit.jpg'
 
 export const metadata: Metadata = {
-  title: 'MEP & HVAC BIM Modeling | NirmanIQ',
+  title: 'MEP & HVAC BIM Modeling | NirmaanIQ',
   description: 'Detailed mechanical, electrical, and plumbing system models including HVAC and air handling units.',
 }
 

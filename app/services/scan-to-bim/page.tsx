@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import ServiceDetail from '@/components/services/ServiceDetail'
 
 export const metadata: Metadata = {
-  title: 'Scan to BIM (LiDAR) | NirmanIQ',
+  title: 'Scan to BIM (LiDAR) | NirmaanIQ',
   description: 'Convert high-precision laser scans into accurate digital as-built intelligence.',
 }
 
