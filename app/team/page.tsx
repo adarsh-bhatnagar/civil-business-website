@@ -13,7 +13,7 @@ const leadership = [
     name: 'Xerik Adeel',
     image: zerik,
     role: 'Civil Engineer (Planning & Designing)',
-    expertise: 'Infrastructure Planning, BIM-Based Drafting, Engineering Design Coordination',
+    expertise: 'Infrastructure Planning, BIM-Based Drafting, Engineering Design Coordination, Tunnel Engineering',
     membership: 'Associate Member of the Institution of Engineers (AMIE) & American Society of Civil Engineers (ASCE)',
     experience: 'Civil Engineering graduate with hands-on experience across infrastructure and building projects, including large-scale transit and public works',
     responsibility: 'Responsible for engineering planning, BIM-based drafting, and ensuring site-feasible design coordination aligned with project standards and construction requirements',
