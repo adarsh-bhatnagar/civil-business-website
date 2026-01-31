@@ -1,17 +1,26 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // React Server Components are enabled by default in Next.js 14 App Router
-  // No additional configuration needed
 
   images: {
     domains: [],
-    // Add external image domains here if needed
-    // Example: ['example.com', 'cdn.example.com']
   },
 
-  // Output configuration (optional)
-  // output: 'standalone', // For Docker deployments
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'nirmaaniq.com',
+          },
+        ],
+        destination: 'https://www.nirmaaniq.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
