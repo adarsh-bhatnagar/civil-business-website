@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-bim-charcoal mb-1">Email</h3>
                   <a href="mailto:info@bimconsultancy.com" className="text-bim-charcoal/70 hover:text-bim-teal transition-colors">
-                    nirmaan.iq@outlook.com, nirmaan.iq@gmail.com
+                    nirmaan.iq@outlook.com, nirmaaniq@gmail.com
                   </a>
                 </div>
               </div>
