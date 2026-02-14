@@ -87,7 +87,7 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <Mail className="text-bim-teal mt-0.5 flex-shrink-0" size={16} />
                 <a href="mailto:info@bimconsultancy.com" className="text-white/70 hover:text-bim-teal transition-colors">
-                  nirmaan.iq@outlook.com, nirmaan.iq@gmail.com
+                  nirmaan.iq@outlook.com, nirmaaniq@gmail.com
                 </a>
               </li>
               <li className="flex items-start space-x-3">
