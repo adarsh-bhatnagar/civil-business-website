@@ -7,6 +7,7 @@ import Image from 'next/image'
 import adarsh from '@/app/assets/adarsh.png'
 import zerik from '@/app/assets/zerik_adeel_new.png'
 import salim from '@/app/assets/salim_usmani.jpeg'
+import pankaj from '@/app/assets/pankaj.jpeg'
 
 const leadership = [
   {
@@ -34,6 +35,14 @@ const leadership = [
     expertise: 'Built-Environment Digital Systems, BIM Data Pipelines, Platform & Workflow Engineering',
     experience: 'Computer Science and IT professional with hands-on experience in designing and implementing digital systems that support BIM workflows, information management, and asset data integration.',
     responsibility: 'Responsible for bridging engineering domain requirements with scalable digital systems, ensuring that BIM, Digital Twin, and information workflows are reliable, structured, and production-ready.',
+  },
+  {
+    name: 'Pankaj Pandey',
+    image: pankaj,
+    role: 'Mechanical Engineer (Projects)',
+    expertise: 'Infrastructure & Metro Projects, Residential & Commercial Buildings, Hospital & Institutional Projects',
+    experience: 'B. Tech in Mechanical with 13.8 years of experience. Delivered projects including SBUT, Delhi High Court S Block, Cafims Hospital, Metro Project in Delhi D-10, NCRTC project RRTS, Residential Project Trump Tower, Altitude-65 Project, Mansion 113, and Golf Hills Project.',
+    responsibility: 'Responsible for mechanical engineering inputs and project delivery across infrastructure, metro, residential, and institutional projects.',
   },
 ]
 
@@ -192,7 +201,7 @@ export default function TeamPage() {
           <h2 className="text-3xl font-semibold text-bim-charcoal mb-8 text-center">
             Leadership
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {leadership.map((leader, index) => (
               <motion.div
                 key={leader.name}
