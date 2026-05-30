@@ -9,6 +9,7 @@ import zerik from '@/app/assets/zerik_adeel_new.png'
 import salim from '@/app/assets/salim_usmani.jpeg'
 import pankaj from '@/app/assets/pankaj.jpeg'
 import yashpal from '@/app/assets/yashpal_pic.png'
+import afrooz from '@/app/assets/afrooz.jpeg'
 
 const leadership = [
   {
@@ -27,8 +28,17 @@ const leadership = [
     expertise: 'High-Rise Building Construction, Tunnel Engineering, Site Supervision & Safety',
     experience: 'Civil Engineer with hands-on experience across high-rise residential buildings and heavy engineering tunnel infrastructure projects.',
     responsibility: 'Responsible for site supervision, tunnel construction support  operations, shotcreting, rock bolting, and ensuring construction safety and quality compliance on site.',
-  }
-  ,
+  },
+  {
+    name: 'Syed Farooz Hussain',
+    image: afrooz,
+    role: 'Civil Construction Engineer (Tunnel Engineering)',
+    expertise: 'Tunnel Engineering, NATM Excavation & Support, Rock Bolting & Shotcreting, Jet Grouting, Portal Stabilization, Site Supervision',
+    experience:
+      'B. Tech Civil Engineering with 8+ years of tunnel engineering experience across hydroelectric, railway, highway, and international mega-projects including NEOM infrastructure tunnels (KSA), Ratle HEP (850 MW), J&K USBRL Rail Link, Rishikesh–Karnprayag Railway, and Pune Ring Road.',
+    responsibility:
+      'Responsible for tunnel excavation and support works, portal stabilization, rock support installation, site inspections, construction coordination, and ensuring compliance with design and safety standards on heavy infrastructure projects.',
+  },
   {
     name: 'Adarsh Bhatnagar',
     image: adarsh,
